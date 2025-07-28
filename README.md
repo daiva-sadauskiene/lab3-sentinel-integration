@@ -15,6 +15,7 @@ In this lab, I configured a Log Analytics Workspace, added Microsoft Sentinel, i
 ### 2. Added Microsoft Sentinel
 - Enabled Microsoft Sentinel on the Log Analytics workspace
 - Confirmed that Sentinel is running with no operational issues
+![Sentinel Overview](sentinel-enabled.png)
 
 ### 3. Data Connectors and Threat Intelligence
 
@@ -29,6 +30,7 @@ In this lab, I configured a Log Analytics Workspace, added Microsoft Sentinel, i
 - Source visible in: **Sentinel > Threat Intelligence > Source: pulsefeed**
 
 > Note: TAXII connector allows Microsoft Sentinel to receive real-time threat indicators from trusted open source feeds like Pulsedive.
+![Pulsefeed Threat Intelligence](pulsefeed.png)
 
 ### 4. 🔔 Alert Rule Configuration
 
@@ -36,6 +38,7 @@ Configured multiple **Analytics rules**, including:
 - Failed logon attempts anomaly (NRT)
 - Impossible travel detection (scheduled)
 - Advanced Multistage Attack Detection (Fusion)
+![Analytics Rules](analytics-rules.png)
 
 ### Analytics Rule: `Failed logon attempts anomaly`
 - **Type:** Near Real-Time (NRT)
@@ -43,12 +46,15 @@ Configured multiple **Analytics rules**, including:
 - **Severity:** Medium
 - **Detection method:** Custom KQL query on `SecurityEvent` (EventID = 4625)
 - **Purpose:** Detect brute-force or repeated failed login attempts
+![KQL Rule Query](rule-query.png)
+![Failed Logon Incident](sentinel-failed-logon-attempt.png)
 
 ## 🚨 Alerting & Incident Investigation
 - Alerts triggered by the rules were automatically grouped into incidents in Sentinel.
 - All incidents in this case were related to suspicious failed login attempts.
 - Investigated incident severity and source within Sentinel > Incidents.
 - Demonstrated use of analytics rules and MITRE ATT&CK mapping.
+![Sentinel Incidents](images/sentinel-incidents.png)
 
 ## 🎯 Key Learning Outcomes
 - How to configure Sentinel from scratch
@@ -57,10 +63,7 @@ Configured multiple **Analytics rules**, including:
 - How Sentinel helps monitor, detect, and respond to security threats
 
 ## 🖼️ Screenshots
-	1. SentinelLogWorkspace overview 
-	2. Active analytics rules in Sentinel 
-	3. Triggered incidents based on failed logon attempts 
-	4. Rule query configuration (KQL)
+
 
 ## 🔒 Why this matters
 This lab demonstrates the ability to:
