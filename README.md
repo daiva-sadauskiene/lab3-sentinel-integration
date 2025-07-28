@@ -38,6 +38,7 @@ Configured multiple **Analytics rules**, including:
 - Failed logon attempts anomaly (NRT)
 - Impossible travel detection (scheduled)
 - Advanced Multistage Attack Detection (Fusion)
+- 
 ![Analytics Rules](analytics-rules.png)
 
 ### Analytics Rule: `Failed logon attempts anomaly`
