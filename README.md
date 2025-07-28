@@ -54,7 +54,7 @@ Configured multiple **Analytics rules**, including:
 - All incidents in this case were related to suspicious failed login attempts.
 - Investigated incident severity and source within Sentinel > Incidents.
 - Demonstrated use of analytics rules and MITRE ATT&CK mapping.
-![Sentinel Incidents](images/sentinel-incidents.png)
+![Sentinel Incidents](sentinel-incidents.png)
 
 ## 🎯 Key Learning Outcomes
 - How to configure Sentinel from scratch
