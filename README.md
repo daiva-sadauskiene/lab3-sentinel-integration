@@ -11,7 +11,7 @@ In this lab, I configured a Log Analytics Workspace, added Microsoft Sentinel, i
 - Access control: Resource-level (RBAC)
 - Connected to Azure Subscription 1
 
-  This screenshot shows the Log Analytics Workspace created for Microsoft Sentinel.
+  *This screenshot shows the Log Analytics Workspace created for Microsoft Sentinel.*
 - ![Log Analytics Workspace](log-analytics-workspace.png)
 
 ### 2. Added Microsoft Sentinel
