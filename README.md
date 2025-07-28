@@ -34,6 +34,8 @@ In this lab, I configured a Log Analytics Workspace, added Microsoft Sentinel, i
 - Source visible in: **Sentinel > Threat Intelligence > Source: pulsefeed**
 
 > Note: TAXII connector allows Microsoft Sentinel to receive real-time threat indicators from trusted open source feeds like Pulsedive.
+
+  *Shows the connected threat feed via the TAXII connector.*
 ![Pulsefeed Threat Intelligence](pulsefeed.png)
 
 ### 4. 🔔 Alert Rule Configuration
@@ -42,6 +44,8 @@ Configured multiple **Analytics rules**, including:
 - Failed logon attempts anomaly (NRT)
 - Impossible travel detection (scheduled)
 - Advanced Multistage Attack Detection (Fusion)
+
+  *Displays the configured analytics rules: including near real-time (NRT), scheduled, and Fusion rules. These are used to simulate common SOC detection scenarios.*
 ![Analytics Rules](analytics-rules.png)
 
 ### Analytics Rule: `Failed logon attempts anomaly`
@@ -50,7 +54,11 @@ Configured multiple **Analytics rules**, including:
 - **Severity:** Medium
 - **Detection method:** Custom KQL query on `SecurityEvent` (EventID = 4625)
 - **Purpose:** Detect brute-force or repeated failed login attempts
+
+  *Shows the KQL logic used in the failed logon attempts anomaly rule. It dynamically detects multiple 4625 events over time* 
 ![KQL Rule Query](rule-query.png)
+
+  *Shows the incident's metadata, including severity, status, alert source, and evidence counts.*
 ![Failed Logon Incident](sentinel-failed-logon-attempt.png)
 
 ## 🚨 Alerting & Incident Investigation
@@ -58,6 +66,8 @@ Configured multiple **Analytics rules**, including:
 - All incidents in this case were related to suspicious failed login attempts.
 - Investigated incident severity and source within Sentinel > Incidents.
 - Demonstrated use of analytics rules and MITRE ATT&CK mapping.
+  
+  *Incident view showing how alerts triggered by the analytics rules were grouped into incidents.*
 ![Sentinel Incidents](sentinel-incidents.png)
 
 ## 🎯 Key Learning Outcomes
