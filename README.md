@@ -28,7 +28,7 @@ In this lab, I configured a Log Analytics Workspace, added Microsoft Sentinel, i
 - Connected via **Windows Security Events via AMA**
 
 ### Threat Intelligence (TAXII Connector):
-- Enabled **Threat Intelligence – TAXII** data connector
+- Enabled Threat Intelligence – TAXII data connector
 - Connected **Pulsedive threat feed**
 - Imported ~29,000+ IOCs (IP addresses, domains)
 - Source visible in: **Sentinel > Threat Intelligence > Source: pulsefeed**
@@ -38,7 +38,7 @@ In this lab, I configured a Log Analytics Workspace, added Microsoft Sentinel, i
   *Shows the connected threat feed via the TAXII connector.*
 ![Pulsefeed Threat Intelligence](pulsefeed.png)
 
-### 4. 🔔 Alert Rule Configuration
+### 4. Alert Rule Configuration
 
 Configured multiple **Analytics rules**, including:
 - Failed logon attempts anomaly (NRT)
