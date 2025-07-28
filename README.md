@@ -70,19 +70,18 @@ Configured multiple **Analytics rules**, including:
   *Incident view showing how alerts triggered by the analytics rules were grouped into incidents.*
 ![Sentinel Incidents](sentinel-incidents.png)
 
-## 🎯 Key Learning Outcomes
-- How to configure Sentinel from scratch
-- Real-time alert rule creation and tuning
-- Incident investigation in a SOC-like environment
-- How Sentinel helps monitor, detect, and respond to security threats
-
-## 🖼️ Screenshots  
-*The screenshots illustrate the process of configuring Microsoft Sentinel, including setting up a Log Analytics Workspace, enabling Sentinel, connecting the TAXII threat intelligence feed, creating custom analytics rules, and reviewing generated incidents based on simulated failed logon attempts.*
-
-## 🔒 Skills Demonstrated
+## 🔒 Key Learning Outcomes 
 - Microsoft Sentinel configuration from scratch
 - TAXII Threat Intelligence integration (Pulsedive)
 - Creation of custom analytics rules using KQL
 - SOC-style alert investigation and incident management
 - Understanding of MITRE ATT&CK mapping in Sentinel
+
+## 🖼️ Screenshots  
+*The screenshots illustrated the process of configuring Microsoft Sentinel, including setting up a Log Analytics Workspace, enabling Sentinel, connecting the TAXII threat intelligence feed, creating custom analytics rules, and reviewing generated incidents based on simulated failed logon attempts.*
+
+## 🎯 Lessons Learned  
+- Real-time alerting relies entirely on correct log sources and rule logic  
+- Without active log activity (e.g. failed logins), no alerts or incidents occur  
+- Threat Intelligence integration is not automatic – it requires mapping via detection rules
 
