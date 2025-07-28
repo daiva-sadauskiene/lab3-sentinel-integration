@@ -12,11 +12,13 @@ In this lab, I configured a Log Analytics Workspace, added Microsoft Sentinel, i
 - Connected to Azure Subscription 1
 
   *This screenshot shows the Log Analytics Workspace created for Microsoft Sentinel.*
-- ![Log Analytics Workspace](log-analytics-workspace.png)
+![Log Analytics Workspace](log-analytics-workspace.png)
 
 ### 2. Added Microsoft Sentinel
 - Enabled Microsoft Sentinel on the Log Analytics workspace
 - Confirmed that Sentinel is running with no operational issues
+
+  *This view confirms that Microsoft Sentinel is enabled and running on the selected Log Analytics Workspace.*
 ![Sentinel Overview](sentinel-enabled.png)
 
 ### 3. Data Connectors and Threat Intelligence
