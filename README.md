@@ -46,7 +46,7 @@ Configured multiple **Analytics rules**, including:
 - **Detection method:** Custom KQL query on `SecurityEvent` (EventID = 4625)
 - **Purpose:** Detect brute-force or repeated failed login attempts
 ![KQL Rule Query](rule-query.png)
-![Analytics Rules](images/analytics rules.png)
+![Analytics Rules](analytics rules.png)
 ![Failed Logon Incident](sentinel-failed-logon-attempt.png)
 
 ## 🚨 Alerting & Incident Investigation
