@@ -39,6 +39,7 @@ Configured multiple **Analytics rules**, including:
 - Impossible travel detection (scheduled)
 - Advanced Multistage Attack Detection (Fusion)
 ![Analytics Rules](analytics-rules.png)
+![Analytics Rules](analytics-rules.png)
 
 ### Analytics Rule: `Failed logon attempts anomaly`
 - **Type:** Near Real-Time (NRT)
